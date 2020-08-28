@@ -2,6 +2,7 @@
   <div class="container">
     <div class="row">
       <button
+        title="Sort"
         type="button"
         class="btn btn-primary btn-lg col-xs-1 col-sm-4 ss-button"
         [disabled]="!isShuffled"
@@ -10,6 +11,7 @@
         Sort
       </button>
       <button
+        title="Shuffle"
         type="button"
         class="btn btn-primary btn-lg col-xs-1 col-sm-4 ss-button"
         [disabled]="isShuffled"
@@ -24,8 +26,10 @@
         *ngFor="let tile of tiles"
         [ngStyle]="{ 'background-color': tile.color }"
       >
-        <h1 class="card-title">{{ tile.id }}</h1>
+        <h1 class="card-title" title="{{ tile.id }}">{{ tile.id }}</h1>
       </div>
     </div>
   </div>
+  <br />
+  <div class="text-center">Shuffle and sort by <b>Agilesh Sivakumar</b></div>
 </div>
