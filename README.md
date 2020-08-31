@@ -1,27 +1,31 @@
 # SortShuffle
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
+Sample project to show sort and shuffle on a tile
+Sort and shuffle functionalities are done without using in built JS Array functions
 
-## Development server
+Used bootstrap styles for grid and responsive display
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Run the project
 
-## Code scaffolding
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Test the project
 
-## Build
+Run `npm run test` for the unit tests to run.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Lint the project
 
-## Running unit tests
+Run `npm run lint` for linting the project.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Format the project
 
-## Running end-to-end tests
+Run `npm run format` for formatting the project using prettier.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Plug and Play
 
-## Further help
+Copy paste the `tile` folder and import the `TileModule` in your code
+In the HTML place `<app-tile></ap-tile>`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Demo
+
+Link: https://agileshsivakumar.github.io/sort-shuffle/

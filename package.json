@@ -7,27 +7,29 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "install:prettier": "npm i prettier@1.19.1 --no-save",
+    "format": "npm run install:prettier && prettier --write \"src/**/*.ts\""
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~9.0.5",
-    "@angular/common": "~9.0.5",
-    "@angular/compiler": "~9.0.5",
-    "@angular/core": "~9.0.5",
-    "@angular/forms": "~9.0.5",
-    "@angular/platform-browser": "~9.0.5",
-    "@angular/platform-browser-dynamic": "~9.0.5",
-    "@angular/router": "~9.0.5",
-    "rxjs": "~6.5.4",
-    "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "@angular/animations": "9.0.5",
+    "@angular/common": "9.0.5",
+    "@angular/compiler": "9.0.5",
+    "@angular/core": "9.0.5",
+    "@angular/forms": "9.0.5",
+    "@angular/platform-browser": "9.0.5",
+    "@angular/platform-browser-dynamic": "9.0.5",
+    "@angular/router": "9.0.5",
+    "rxjs": "6.5.4",
+    "tslib": "1.10.0",
+    "zone.js": "0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.900.5",
-    "@angular/cli": "~9.0.5",
-    "@angular/compiler-cli": "~9.0.5",
-    "@angular/language-service": "~9.0.5",
+    "@angular-devkit/build-angular": "0.900.5",
+    "@angular/cli": "9.0.5",
+    "@angular/compiler-cli": "9.0.5",
+    "@angular/language-service": "9.0.5",
     "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
@@ -43,5 +45,11 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 4
   }
 }
